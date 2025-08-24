@@ -86,6 +86,72 @@
             height: 8px;
             border-radius: 4px;
         }
+
+        /* Certification Section Styles */
+        .certification-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .certification-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .certification-img {
+            height: 180px;
+            object-fit: cover;
+            width: 100%;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .certification-img img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        
+        .certification-body {
+            padding: 20px;
+        }
+        
+        .certification-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .certification-issuer {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .certification-date {
+            color: #6c757d;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+        }
+        
+        .certification-badge {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
         
         .portfolio-item {
             position: relative;
@@ -124,20 +190,6 @@
         
         .portfolio-item:hover .portfolio-overlay {
             opacity: 1;
-        }
-        
-        .testimonial-card {
-            background-color: white;
-            border-radius: 5px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            margin-bottom: 30px;
-            transition: all 0.3s;
-        }
-        
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
         
         .contact-info {
