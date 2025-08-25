@@ -260,6 +260,53 @@
         .back-to-top:hover {
             background-color: var(--accent-color);
         }
+
+        /* Timeline styles for experience section */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: var(--primary-color);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-date {
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+            line-height: 1.2;
+        }
+        
+        .timeline-content {
+            margin-left: 40px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
         
         /* Animation classes */
         .animate-on-scroll {
