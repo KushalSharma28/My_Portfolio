@@ -33,7 +33,7 @@ A personal portfolio website built to showcase my skills, projects, and experien
 
 ## 🧑‍💻 Author
 
-* **Kushal Sharma** – [@yourgithub](https://github.com/KushalSharma28)
+* **Kushal Sharma** – [KushalSharma28](https://github.com/KushalSharma28)
 * [LinkedIn](https://www.linkedin.com/in/kushal-sharma-bab750170)
 * [Portfolio](https://kushalsharma28.github.io/My_Portfolio/)
 
