@@ -3,652 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kushal Sharma | Professional Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="./css/style1.css" rel="stylesheet">
+    <title>Kushal Sharma | SDET & QA Engineer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="./css/style1.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Kushal Sharma</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+<body>
+
+    <nav>
+        <div class="logo">KS</div>
+        <div class="nav-links">
+            <a href="#hero"><span class="highlight">About</span> </a>
+            <a href="#skills"><span class="highlight">Skills</span> </a>
+            <a href="#experience"><span class="highlight">Experience</span> </a>
+	        <a href="#certifications"><span class="highlight">Certifications</span> </a>
+            <a href="#projects"><span class="highlight">Projects</span> </a>
+	    <a href="#contact"><span class="highlight">Connect</span> </a>	
         </div>
+        <a href="img/Kushal_Sharma_Resume.pdf" target="_blank" class="btn-resume">Download Resume</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 hero-content animate-on-scroll">
-                    <h4 class="text-uppercase text-white-50 mb-1">Hello, I'm</h4>
-                    <h1 class="display-4 fw-bold mb-3">KUSHAL SHARMA</h1>
-                    <h3 class="mb-4">ISTQB and Generative AI Foundation Certified <span class="text-warning">|</span> Software Test Engineer</h3>
-                    <p class="lead mb-4">ISTQB-CTFL and Generative AI Foundation Certified Tester with 4+ years of experience in designing and executing test plans and test cases to ensure for web applications. Proficient in Selenium and Cypress for UI automation, and Postman for API testing. Proven ability to contribute to Agile/Scrum teams, with a strong understanding of SDLC and STLC. Successfully reduced bug reporting time by 15% using JIRA and Confluence.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#contact" class="btn btn-light btn-lg px-4">Hire Me</a>
-                        <a href="#portfolio" class="btn btn-outline-light btn-lg px-4">View Work</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center animate-on-scroll" style="transition-delay: 0.2s;">
-                    <img src="./img/Image_goxj8qgoxj8qgoxj.png" alt="Profile Image" class="profile-img img-fluid rounded-circle">
-                    <!-- https://via.placeholder.com/400x400-->
-                </div>
-            </div>
+    <section class="hero">
+        <p class="mono">Hi, my name is</p>
+        <h1>Kushal Sharma.</h1>
+        <h2>I build things that break things.</h2>
+        <p>
+            I'm a <span class="highlight">Software Test Engineer</span> specializing in building robust automation frameworks.
+            I help companies ensure quality at speed by reducing regression cycles and catching critical bugs early.
+            Currently focused on <span id="typewriter" class="typewriter-text"></span>
+        </p>
+        <div>
+            <a href="#projects" class="btn-resume" style="margin-left:0;">Check out my work</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container py-5">
-            <h2 class="section-title animate-on-scroll">About Me</h2>
-            <div class="row">
-                <div class="col-lg-6 mb-4 animate-on-scroll">
-                    <h3 class="mb-3">Who Am I?</h3>
-                    <p>I'm a passionate Software Test Engineer with 4 years of experience in Testing. I specialize in Manual & Automation and have a proven track record of delivering exceptional results for clients across various industries.</p>
-                    <p>My approach combines technical expertise with creative problem-solving, allowing me to develop innovative solutions that drive business growth. I'm committed to continuous learning and staying at the forefront of industry trends.</p>
-                    <p>When I'm not working, you can find me to upskilling myself, listening music, Singing Songs and watching movies, etc. which helps me maintain a balanced perspective and brings fresh ideas to my professional work.</p>
-                    <div class="row mt-4">
-                        <div class="col-sm-6">
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><strong>Name:</strong> Kushal Sharma</li>
-                                <li class="mb-2"><strong>Email:</strong> kushalsharma28499@gmail.com</li>
-                                <li class="mb-2"><strong>Phone:</strong> +91 8871150146</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6">
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><strong>Experience:</strong> 4+ Years</li>
-                                <li class="mb-2"><strong>Location:</strong> Pune, India </li>
-                                <li class="mb-2"><strong>Availability:</strong> Open to Work </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 animate-on-scroll" style="transition-delay: 0.2s;">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h3 class="mb-4">My Expertise</h3>
-                            <div class="skill-item">
-                                <div class="skill-name d-flex justify-content-between">
-                                    <span>Manual Testing</span>
-                                    <span>95%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name d-flex justify-content-between">
-                                    <span>Selenium WebDriver</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 70%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name d-flex justify-content-between">
-                                    <span>API Testing (Postman)</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name d-flex justify-content-between">
-                                    <span>Cypress.io</span>
-                                    <span>40%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 40%"></div>
-                                </div>
-                            </div>
-                            <div class="text-center mt-4">
-                                <a href="./img/Kushal_Sharma_Resume.pdf" class="btn btn-primary px-4">
-                                    <i class="fas fa-download me-2"></i> Download Resume
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
-        <div class="container py-5">
-            <h2 class="section-title animate-on-scroll">My Skills</h2>
-            <p class="text-center mb-5 animate-on-scroll">I've honed a diverse set of skills that allow me to tackle complex challenges and deliver exceptional results.</p>
+    <section id="skills">
+        <h2 class="section-title"><span class="mono"></span> Technical Expertise</h2>
+        <div class="skills-grid">
             
-            <div class="row">
-                <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
-                                <i class="fas fa-laptop-code fa-2x"></i>
-                            </div>
-                            <h4>Test Automation</h4>
-                            <ul class="list-unstyled text-start mt-3">
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Selenium </li>
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> TestNG </li>
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> API Testing </li>
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Cypress </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-robot"></i>
+                    <h3>Automation</h3>
                 </div>
-                
-                <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll" style="transition-delay: 0.1s;">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
-                                <i class="fas fa-server fa-2x"></i>
-                            </div>
-                            <h4>API Testing</h4>
-                            <ul class="list-unstyled text-start mt-3">
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Postman</li>
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Rest Assured</li>
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Soap UI</li>
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Swagger</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll" style="transition-delay: 0.2s;">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
-                                <i class="fas fa-code fa-2x"></i>
-                            </div>
-                            <h4>Programming Skills</h4>
-                            <ul class="list-unstyled text-start mt-3">
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Core Java</li>
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Python</li>
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> JavaScript</li>
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> HTML, CSS</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> 
-                
-                <div class="col-md-6 col-lg-3 mb-4 animate-on-scroll" style="transition-delay: 0.3s;">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
-                                <i class="fas fa-tools fa-2x"></i>
-                            </div>
-                            <h4>Tools & Technologies</h4>
-                            <ul class="list-unstyled text-start mt-3">
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Maven</li>
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Jira</li>
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Jenkins</li>
-                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Git</li>
-                            </ul>
-                        </div>
-                    </div>
+                <p style="margin-bottom:1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                    Building scalable frameworks from scratch.
+                </p>
+                <div class="skill-list">
+                    <span class="skill-tag">Selenium</span>
+                    <span class="skill-tag">Cypress</span>
+                    <span class="skill-tag">Tricentis Tosca</span>
+                    <span class="skill-tag">TestNG</span>
+                    <span class="skill-tag">Cucumber BDD</span>
                 </div>
             </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-robot"></i>
+                    <h3>Programming</h3>
+                </div>
+                <p style="margin-bottom:1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                    Building scalable frameworks from scratch.
+                </p>
+                <div class="skill-list">
+                    <span class="skill-tag">Core Java</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-server"></i>
+                    <h3>API & Backend</h3>
+                </div>
+                <p style="margin-bottom:1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                    Validating logic without UI layers.
+                </p>
+                <div class="skill-list">
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">Rest Assured</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools & CI/CD</h3>
+                </div>
+                <p style="margin-bottom:1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                    Streamlining the testing lifecycle.
+                </p>
+                <div class="skill-list">
+                    <span class="skill-tag">Jira</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">Git/GitHub</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Agile/Scrum</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
-<!-- Certifications Section -->
-    <section id="certifications" class="py-5 bg-light">
-        <div class="container py-5">
-            <h2 class="section-title animate-on-scroll">My Certifications</h2>
-            <p class="text-center mb-5 animate-on-scroll">I continuously upgrade my skills through industry-recognized certifications.</p>
+    <section id="experience">
+        <h2 class="section-title"><span class="mono"></span> Where I've Worked</h2>
+        <div class="timeline">
             
-            <div class="certifications-slider">
-                <div class="slider-container">
-                    <div class="slider-track" id="sliderTrack">
-                        <!-- ISTQB Certification -->
-                        <div class="certification-card">
-                            <div class="certification-img">
-                                <img src="./img/287-2877114_istqb-certified-tester-hd-png-download.png" alt="ISTQB Certified Tester Foundation Level">
-                            </div>
-                            <div class="certification-body">
-                                <h3 class="certification-title">ISTQB Certified Tester Foundation Level</h3>
-                                <div class="certification-issuer">International Software Testing Qualifications Board</div>
-                                <div class="certification-date">Issued: February 2025 | No Expiration</div>
-                                <div class="certification-badge">Software Testing</div>
-                                <div class="certification-badge">Quality Assurance</div>
-                                <p class="mt-3">Foundation level certification demonstrating knowledge of fundamental testing principles and processes.</p>
-                                <a href="https://scr.istqb.org/?number=ITB-CTFL-143096" class="btn btn-outline-primary btn-sm mt-2">View Credential</a>
-                            </div>
-                        </div>
-
-                        <!-- Generative AI Foundation Certification -->
-                        <div class="certification-card">
-                            <div class="certification-img" style="background-color: #292929;">
-                                <img src="./img/Screenshot 2025-09-13 112711.png" alt="upgrad Generative AI Foundation Certification">
-                            </div>
-                            <div class="certification-body">
-                                <h3 class="certification-title">Generative AI Foundation</h3>
-                                <div class="certification-issuer">upGrad</div>
-                                <div class="certification-date">Issued: September 2025 | No Expiration</div>
-                                <div class="certification-badge">Generative AI</div>
-                                <div class="certification-badge">ChatGPT</div>
-                                <div class="certification-badge">Microsoft Copilot</div>
-                                <p class="mt-3">Comprehensive introduction to generative AI concepts, techniques, and applications.</p>
-                                <a href="https://upgrad.com/lxp/share/certificate/68c500a3bf3757b9937fcc5b" class="btn btn-outline-primary btn-sm mt-2">View Certificate</a>
-                            </div>
-                        </div>
-
-                        <!-- Tricentis Tosca Certification Badge -->
-                        <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll" style="transition-delay: 0.1s;">
-                            <div class="certification-card">
-                            <!-- <div class="certification-img bg-dark">
-                            <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy Selenium Certification" style="filter: brightness(0) invert(1);">
-                            </div> -->
-                            <div class="certification-img" style="background-color: #5f5f5f;">
-                                <img src="./img/AS1 Badge.png" alt="Udemy Selenium Certification">
-                            </div>
-                            <div class="certification-body">
-                                <h3 class="certification-title">Tricentis Tosca Fundamentals − Automating web application testing (AS1)</h3>
-                                <div class="certification-issuer">Tricentis</div>
-                                <div class="certification-date">Issued: October 2025 | No Expiration</div>
-                                <div class="certification-badge">Test Automation</div>
-                                <div class="certification-badge">API Testing</div>
-                                <div class="certification-badge">Modal Based Testing</div>
-                                <p class="mt-3">Comprehensive training in Selenium WebDriver automation using Java programming language.</p>
-                                <a href="https://academy.tricentis.com/share/gamification/badges/external/dfba7371-0173-4dd6-a1b6-4188c7bcb45f?lang=en">View Certificate</a>
-                            </div>
-                        </div>
-                    </div>
-                        
-                        <!-- Selenium Certification -->
-                        <div class="certification-card">
-                            <div class="certification-img" style="background-color: #5f5f5f;">
-                                <img src="https://via.placeholder.com/200x100/ffffff/5f5f5f?text=Selenium" alt="Udemy Selenium Certification">
-                            </div>
-                            <div class="certification-body">
-                                <h3 class="certification-title">Selenium WebDriver with Java</h3>
-                                <div class="certification-issuer">Udemy</div>
-                                <div class="certification-date">Issued: Aug 2022 | No Expiration</div>
-                                <div class="certification-badge">Test Automation</div>
-                                <div class="certification-badge">Selenium</div>
-                                <div class="certification-badge">Core Java</div>
-                                <p class="mt-3">Comprehensive training in Selenium WebDriver automation using Java programming language.</p>
-                                <a href="https://www.udemy.com/certificate/UC-f660f856-8825-44e1-8605-88597460dcfc" class="btn btn-outline-primary btn-sm mt-2">View Certificate</a>
-                            </div>
-                        </div>
-                        
-                        <!-- Cypress Certification -->
-                        <div class="certification-card">
-                            <div class="certification-img" style="background-color: #5f5f5f;">
-                                <img src="https://via.placeholder.com/200x100/ffffff/5f5f5f?text=Cypress" alt="Cypress.io Certification">
-                            </div>
-                            <div class="certification-body">
-                                <h3 class="certification-title">Modern Web Testing with Cypress</h3>
-                                <div class="certification-issuer">Test Automation University</div>
-                                <div class="certification-date">Issued: Jan 2023 | No Expiration</div>
-                                <div class="certification-badge">Cypress</div>
-                                <div class="certification-badge">JavaScript</div>
-                                <p class="mt-3">Mastered end-to-end testing with Cypress.io framework for modern web applications.</p>
-                                <a href="https://verify.onwingspan.com" class="btn btn-outline-primary btn-sm mt-2">View Certificate</a>
-                            </div>
-                        </div>
-                        
-                        <!-- Rest API Testing Certification -->
-                        <div class="certification-card">
-                            <div class="certification-img" style="background-color: #ff6c37;">
-                                <img src="https://via.placeholder.com/200x100/ffffff/ff6c37?text=Postman" alt="Postman API Certification">
-                            </div>
-                            <div class="certification-body">
-                                <h3 class="certification-title">Rest API Testing</h3>
-                                <div class="certification-issuer">Udemy</div>
-                                <div class="certification-date">Issued: Nov 2022 | No Expiration</div>
-                                <div class="certification-badge">API Testing</div>
-                                <div class="certification-badge">Automation</div>
-                                <p class="mt-3">REST API testing and automation techniques with RestAssured library.</p>
-                                <a href="https://www.udemy.com/certificate/UC-1f12c5a3-b761-4a7d-b0a8-e169a8ef5d8c" class="btn btn-outline-primary btn-sm mt-2">View Certificate</a>
-                            </div>
-                        </div>
-                        
-                        <!-- SDET Certification -->
-                        <div class="certification-card">
-                            <div class="certification-img" style="background-color: #0c6b9c;">
-                                <img src="https://via.placeholder.com/200x100/ffffff/0c6b9c?text=SDET" alt="ISTQB Agile Tester">
-                            </div>
-                            <div class="certification-body">
-                                <h3 class="certification-title">Software Development Engineer in Test (SDET)</h3>
-                                <div class="certification-issuer">SEED Infotech Ltd</div>
-                                <div class="certification-date">Issued: April 2021 | No Expiration</div>
-                                <div class="certification-badge">Manual Testing</div>
-                                <div class="certification-badge">Automation Testing</div>
-                                <p class="mt-3">Specialized certification for testing in Software Development in Engineer in Test Environments.</p>
-                                <a href="https://www.seedinfotech.com/verification" class="btn btn-outline-primary btn-sm mt-2">View Credential</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="slider-nav">
-                    <button class="slider-btn" id="prevBtn">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    
-                    <div class="slider-dots" id="sliderDots">
-                        <!-- Dots will be generated by JavaScript -->
-                    </div>
-                    
-                    <button class="slider-btn" id="nextBtn">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
+            <div class="job-card">
+                <h3 class="job-title">Software Test Engineer <span class="company">@ Biz Secure Labs Pvt. Ltd</span></h3>
+                <span class="duration">2021 - Present</span>
+                <ul class="job-details">
+                    <li>Architected and implemented a Hybrid Automation Framework using <strong>Selenium WebDriver</strong> and Java, increasing test coverage.</li>
+                    <li>Successfully reduced regression testing time through parallel execution pipelines in Jenkins.</li>
+                    <li>Performed rigorous API testing using Postman and Rest Assured to validate endpoint security and data integrity.</li>
+                    <li>Collaborated with developers in an Agile environment to resolve critical bugs in the End Point Management system.</li>
+                </ul>
             </div>
+
+            <div class="job-card">
+                <h3 class="job-title">Internship Trainee <span class="company">@ Bumble Technologies</span></h3>
+                <span class="duration">Sep 2019</span>
+                <ul class="job-details">
+                    <li>Tested IoT-based systems for smart automation sensors.</li>               
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <h3 class="job-title">Internship Trainee <span class="company">@ Netlink Software Group Pvt. Ltd</span></h3>
+                <span class="duration">Jul 2019</span>
+                <ul class="job-details">
+                    <li>Assisted in configuring, monitoring, and troubleshooting network systems to ensure seamless connectivity and data flow efficiency.</li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5 bg-light">
-        <div class="container py-5">
-            <h2 class="section-title animate-on-scroll">My Portfolio</h2>
-            <p class="text-center mb-5 animate-on-scroll">Here are some of my recent projects that demonstrate my skills and expertise.</p>
-            
-            <div class="row">
-                <div class="col-md-6 col-lg-6 mb-4 animate-on-scroll">
-                    <div class="portfolio-item">
-                        <img src="./img/eps-new-box.avif" alt="Project 1" class="portfolio-img"> 
-                        <!-- https:// via.placeholder.com/600x400-->
-                        <div class="portfolio-overlay">
-                            <h4 class="text-white">End Point Management</h4>
-                            <p class="text-white mb-3">Centralized device management solution</p>
-                            <a href="https://adminconsole.net/" class="btn btn-light btn-sm">View Details</a>
-                        </div>
-                    </div>
+    <section id="projects">
+        <h2 class="section-title"><span class="mono"></span> Projects I've Tested</h2>
+        
+        <div class="project-card">
+            <div class="project-top">
+                <div class="folder-icon"><i class="far fa-folder"></i></div>
+                <div class="project-links">
+                    <a href="https://github.com/KushalSharma28" title="View Code"><i class="fab fa-github"></i></a>
+                    <a href="https://adminconsole.net/" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
                 </div>
-            <!--    
-            <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll" style="transition-delay: 0.1s;">
-                    <div class="portfolio-item">
-                        <img src="./img/DP.png" alt="Project 2" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h4 class="text-white">Dealer Portal App</h4>
-                            <p class="text-white mb-3">Brief description of the project</p>
-                            <a href="https://play.google.com/store/apps/details?id=com.krypton.dealerportal" class="btn btn-light btn-sm">View Details</a>
-                        </div>
-                    </div>
-                </div>-->
-                
-                <div class="col-md-6 col-lg-6 mb-4 animate-on-scroll" style="transition-delay: 0.2s;">
-                    <div class="portfolio-item">
-                        <img src="./img/heat-ticketing-system.png" alt="Project 3" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h4 class="text-white">IT Desk</h4>
-                            <p class="text-white mb-3">Streamlined IT support ticketing system</p>
-                            <a href="#" class="btn btn-light btn-sm">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 4" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h4 class="text-white">Project Title 4</h4>
-                            <p class="text-white mb-3">Brief description of the project</p>
-                            <a href="#" class="btn btn-light btn-sm">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll" style="transition-delay: 0.1s;">
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 5" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h4 class="text-white">Project Title 5</h4>
-                            <p class="text-white mb-3">Brief description of the project</p>
-                            <a href="#" class="btn btn-light btn-sm">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll" style="transition-delay: 0.2s;">
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 6" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <h4 class="text-white">Project Title 6</h4>
-                            <p class="text-white mb-3">Brief description of the project</p>
-                            <a href="#" class="btn btn-light btn-sm">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            
-            <div class="text-center mt-4 animate-on-scroll">
-                <a href="https://github.com/KushalSharma28" class="btn btn-primary px-4">View All Projects</a>
             </div>
+            <h3 style="color: var(--text-primary); margin: 10px 0;">End Point Management System</h3>
+            <p style="color: var(--text-secondary);">
+                A centralized device management solution. 
+                <br><br>
+                <span class="highlight">The Challenge:</span> Manual regression for 500+ devices was taking 4 days per release.
+                <br>
+                <span class="highlight">The Solution:</span> Designed an automated suite that simulates device heartbeats and policy updates.
+            </p>
+            <div class="project-tech-list">
+                <span>Selenium</span>
+                <span>Java</span>
+                <span>Jenkins</span>
+                <span>TestNG</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-top">
+                <div class="folder-icon"><i class="far fa-folder"></i></div>
+                <div class="project-links">
+                    <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <h3 style="color: var(--text-primary); margin: 10px 0;">IT Desk Ticketing System</h3>
+            <p style="color: var(--text-secondary);">
+                A streamlined support ticketing platform.
+                <br><br>
+                <span class="highlight">The Contribution:</span> Performed End-to-End testing using Cypress to validate the ticket lifecycle from creation to closure. ensuring zero critical leakage to production.
+            </p>
+            <div class="project-tech-list">
+                <span>Cypress</span>
+                <span>JavaScript</span>
+                <span>Mocha</span>
+            </div>
+        </div>
+
+    </section>
+
+	<section id="certifications">
+        <h2 class="section-title"><span class="mono"></span> Certifications</h2>
+        <div class="cert-grid">
+
+            <div class="cert-card">
+                <div>
+                    <div class="cert-top">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <i class="fas fa-check-circle" style="color: var(--text-secondary);"></i>
+                    </div>
+                    <h3 class="cert-title">ISTQB Certified Tester</h3>
+                    <span class="cert-issuer">Foundation Level (CTFL)</span>
+                    <p class="cert-desc">
+                        International validation of fundamental testing principles, test lifecycle, and defect management.
+                    </p>
+                </div>
+                <a href="https://scr.istqb.org/?number=ITB-CTFL-143096" target="_blank" class="cert-link">
+                    View Credential <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                </a>
+            </div>
+
+            <div class="cert-card">
+                <div>
+                    <div class="cert-top">
+                        <i class="fas fa-cubes cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Tricentis Tosca Automation</h3>
+                    <span class="cert-issuer">Tricentis Academy (AS1 & AS2)</span>
+                    <p class="cert-desc">
+                        Specialist certification for model-based test automation and optimizing test data management.
+                    </p>
+                </div>
+                <a href="https://academy.tricentis.com/" target="_blank" class="cert-link">
+                    View Credential <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                </a>
+            </div>
+
+            <div class="cert-card">
+                <div>
+                    <div class="cert-top">
+                        <i class="fas fa-code cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Selenium 4 WebDriver</h3>
+                    <span class="cert-issuer">Udemy</span>
+                    <p class="cert-desc">
+                        Architect level training in Selenium 4 with Java, covering Grid, TestNG, and Framework design.
+                    </p>
+                </div>
+                <a href="https://www.udemy.com/certificate/UC-f660f856-8825-44e1-8605-88597460dcfc" target="_blank" class="cert-link">
+                    View Certificate <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                </a>
+            </div>
+
+            <div class="cert-card">
+                <div>
+                    <div class="cert-top">
+                        <i class="fas fa-network-wired cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Rest API Automation</h3>
+                    <span class="cert-issuer">Postman & Rest Assured</span>
+                    <p class="cert-desc">
+                        Comprehensive API testing techniques including chaining requests and validating JSON schemas.
+                    </p>
+                </div>
+                <a href="https://www.udemy.com/certificate/UC-1f12c5a3-b761-4a7d-b0a8-e169a8ef5d8c" target="_blank" class="cert-link">
+                    View Certificate <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                </a>
+            </div>
+
+            <div class="cert-card">
+                <div>
+                    <div class="cert-top">
+                        <i class="fas fa-brain cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Generative AI Foundation</h3>
+                    <span class="cert-issuer">upGrad</span>
+                    <p class="cert-desc">
+                        Understanding LLMs and applying GenAI tools to optimize software testing workflows.
+                    </p>
+                </div>
+                <a href="https://upgrad.com/" target="_blank" class="cert-link">
+                    View Certificate <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                </a>
+            </div>
+
+            <div class="cert-card">
+                <div>
+                    <div class="cert-top">
+                        <i class="fab fa-js cert-icon"></i>
+                    </div>
+                    <h3 class="cert-title">Modern Web Testing</h3>
+                    <span class="cert-issuer">Test Automation University (Cypress)</span>
+                    <p class="cert-desc">
+                        Mastered end-to-end web application testing for modern JavaScript frameworks.
+                    </p>
+                </div>
+                <a href="#" target="_blank" class="cert-link">
+                    View Certificate <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                </a>
+            </div>
+
         </div>
     </section>
 
-<!-- Experience Section -->
-    <section id="experience" class="py-5 bg-light">
-        <div class="container py-5">
-            <h2 class="section-title animate-on-scroll">My Experience</h2>
-            <p class="text-center mb-5 animate-on-scroll">My professional journey and achievements over the years.</p>
-            
-            <div class="row">
-                <div class="col-lg-6 mb-4 animate-on-scroll">
-                    <h3 class="mb-4">Work Experience</h3>
-                    
-                    <div class="timeline">
-                        <div class="timeline-item mb-4">
-                            <div class="timeline-date">2021 - Present</div>
-                            <div class="timeline-content">
-                                <h4>Software Test Engineer</h4>
-                                <h5>Biz Secure Labs Pvt. Ltd</h5>
-                                <p>Test and implementation of test automation frameworks using Selenium and Cypress. Reduced regression testing time by 65% through automation.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item mb-4">
-                            <div class="timeline-date">Sep 2019</div>
-                            <div class="timeline-content">
-                                <h4>Internship Trainee</h4>
-                                <h5>Bumble Technologies</h5>
-                                <p>Developed and tested IoT-based systems for smart automation, including sensor integration, data collection, and real-time monitoring.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">June 2019</div>
-                            <div class="timeline-content">
-                                <h4>Internship Trainee</h4>
-                                <h5>Netlink Software Group Pvt. Ltd</h5>
-                                <p>Assisted in configuring, monitoring, and troubleshooting network systems to ensure seamless connectivity and data flow efficiency.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 animate-on-scroll" style="transition-delay: 0.2s;">
-                    <h3 class="mb-4">Education Qualifications</h3>
-                    
-                    <div class="timeline">
-                        <div class="timeline-item mb-4">
-                            <div class="timeline-date">2020-2021</div>
-                            <div class="timeline-content">
-                                <h4>SDET</h4>
-                                <h5>SEED Infotech Pvt. Ltd</h5>
-                                <p>Specialization in Software Development Engineer in Test</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item mb-4">
-                            <div class="timeline-date">2016-2020</div>
-                            <div class="timeline-content">
-                                <h4>BE in Computer Science</h4>
-                                <h5>Rajiv Gandhi Technical University</h5>
-                                <p>Specialization in Computer Science and Engineering</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item mb-4">
-                            <div class="timeline-date">2015-2016</div>
-                            <div class="timeline-content">
-                                <h4>Secondary School</h4>
-                                <h5>State Board</h5>
-                                <p>Specialized as a Maths and Science Subjects</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">2013-2014</div>
-                            <div class="timeline-content">
-                                <h4>High School</h4>
-                                <h5>State Board</h5>
-                                <p>Specialized as a Maths and Science Subjects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="contact" class="contact-section">
+        <p class="mono highlight">What's Next?</p>
+        <h2>Get In Touch</h2>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
+            I am currently looking for new opportunities as a Senior QA or SDET. 
+            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+        </p>
+        <a href="mailto:kushalsharma28499@gmail.com" class="btn-main">Say Hello</a>
+        
+        <div style="margin-top: 3rem; font-size: 1.5rem; color: var(--text-secondary);">
+            <a href="https://github.com/KushalSharma28" style="margin: 0 10px;"><i class="fab fa-github"></i></a>
+            <a href="#" style="margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+            <a href="#" style="margin: 0 10px;"><i class="fas fa-envelope"></i></a>
         </div>
+        <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--text-secondary); font-family: var(--font-mono);">
+            Designed & Built by Kushal Sharma
+        </p>
     </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container py-5">
-            <h2 class="section-title animate-on-scroll">Get In Touch</h2>
-            <p class="text-center mb-5 animate-on-scroll">I'm currently available for freelance work or full-time positions. Feel free to contact me!</p>
-            
-            <div class="row">
-                <div class="col-lg-5 mb-5 mb-lg-0 animate-on-scroll">
-                    <h3 class="mb-4">Contact Information</h3>
-                    <p>Ready to start your next project or have any questions? Don't hesitate to reach out.</p>
-                    
-                    <div class="contact-info">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h5 class="mb-0">Location</h5>
-                            <p class="mb-0">Pune, India</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-info">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h5 class="mb-0">Email</h5>
-                            <p class="mb-0">kushalsharma28499@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-info">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div>
-                            <h5 class="mb-0">Phone</h5>
-                            <p class="mb-0">+91 8871150146</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-4">
-                        <h5 class="mb-3">Follow Me</h5>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/kushal-sharma-bab750170"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/KushalSharma28"><i class="fab fa-github"></i></a>
-                            <!-- <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-dribbble"></i></a>
-                            <a href="#"><i class="fab fa-behance"></i></a> -->
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-7 animate-on-scroll" style="transition-delay: 0.2s;">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h3 class="mb-4">Send Me a Message</h3>
-                            <form id="contactForm">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="name" class="form-label">Your Name</label>
-                                        <input type="text" class="form-control" id="name" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="email" class="form-label">Your Email</label>
-                                        <input type="email" class="form-control" id="email" required>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="subject" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary px-4">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p class="mb-0">&copy; <script>document.write(new Date().getFullYear())</script> Kushal Sharma. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/kushal-sharma-bab750170"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/KushalSharma28"><i class="fab fa-github"></i></a>
-                    <!-- <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-dribbble"></i></a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="./js/script1.js"></script>
 </body>
