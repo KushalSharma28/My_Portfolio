@@ -1,149 +1,89 @@
-// Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+// --- 1. TYPEWRITER EFFECT ---
+const textElement = document.getElementById('typewriter');
+const phrases = ["End-to-End Testing.", "API Automation.", "Performance Optimization.", "Generative AI."];
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typeSpeed = 100;
+
+function type() {
+    if (!textElement) return; // Guard clause in case element is missing
+    const currentPhrase = phrases[phraseIndex];
+    
+    if (isDeleting) {
+        textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 50;
+    } else {
+        textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+        typeSpeed = 150;
+    }
+
+    if (!isDeleting && charIndex === currentPhrase.length) {
+        isDeleting = true;
+        typeSpeed = 2000; // Pause at end of phrase
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        typeSpeed = 500;
+    }
+
+    setTimeout(type, typeSpeed);
+}
+
+document.addEventListener('DOMContentLoaded', type);
+
+
+// --- 2. THEME TOGGLE LOGIC ---
+const toggleBtn = document.getElementById('theme-toggle');
+const html = document.documentElement;
+
+// Function to update icon
+function updateIcon(theme) {
+    const icon = toggleBtn.querySelector('i');
+    if (theme === 'light') {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+    } else {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    }
+}
+
+// Check Local Storage for preference on load
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    html.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+}
+
+// Click event
+if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+        const currentTheme = html.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         
-        // Back to top button
-        window.addEventListener('scroll', function() {
-            const backToTop = document.querySelector('.back-to-top');
-            if (window.scrollY > 300) {
-                backToTop.classList.add('active');
-            } else {
-                backToTop.classList.remove('active');
-            }
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Animation on scroll
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.animate-on-scroll');
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.2;
-                
-                if (elementPosition < screenPosition) {
-                    element.classList.add('animated');
-                }
-            });
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon(newTheme);
+    });
+}
+
+
+// --- 3. BACK TO TOP LOGIC ---
+const backToTopBtn = document.getElementById('backToTop');
+
+if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
         }
-        
-        window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
-        
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Here you would typically send the form data to a server
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
-        
-        // Initialize tooltips
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
-        });
-        document.addEventListener('DOMContentLoaded', function() {
-            // Slider functionality
-            const sliderTrack = document.getElementById('sliderTrack');
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-            const sliderDots = document.getElementById('sliderDots');
-            
-            const cards = document.querySelectorAll('.certification-card');
-            const cardWidth = cards[0].offsetWidth + 20; // card width + gap
-            const visibleCards = Math.floor(document.querySelector('.slider-container').offsetWidth / cardWidth);
-            const totalCards = cards.length;
-            const maxSlideIndex = totalCards - visibleCards;
-            
-            let currentPosition = 0;
-            
-            // Create dots
-            for (let i = 0; i <= maxSlideIndex; i++) {
-                const dot = document.createElement('div');
-                dot.classList.add('slider-dot');
-                if (i === 0) dot.classList.add('active');
-                dot.addEventListener('click', () => {
-                    goToSlide(i);
-                });
-                sliderDots.appendChild(dot);
-            }
-            
-            // Update buttons state
-            function updateButtons() {
-                prevBtn.disabled = currentPosition === 0;
-                nextBtn.disabled = currentPosition >= maxSlideIndex;
-                
-                // Update active dot
-                document.querySelectorAll('.slider-dot').forEach((dot, index) => {
-                    dot.classList.toggle('active', index === currentPosition);
-                });
-            }
-            
-            // Go to specific slide
-            function goToSlide(position) {
-                currentPosition = Math.max(0, Math.min(position, maxSlideIndex));
-                sliderTrack.style.transform = `translateX(-${currentPosition * cardWidth}px)`;
-                updateButtons();
-            }
-            
-            // Next slide
-            nextBtn.addEventListener('click', () => {
-                if (currentPosition < maxSlideIndex) {
-                    goToSlide(currentPosition + 1);
-                }
-            });
-            
-            // Previous slide
-            prevBtn.addEventListener('click', () => {
-                if (currentPosition > 0) {
-                    goToSlide(currentPosition - 1);
-                }
-            });
-            
-            // Initialize buttons
-            updateButtons();
-            
-            // Animation on scroll
-            const animatedElements = document.querySelectorAll('.animate-on-scroll');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        setTimeout(() => {
-                            entry.target.classList.add('visible');
-                        }, 100);
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-            
-            animatedElements.forEach(element => {
-                observer.observe(element);
-            });
-            
-            // Handle window resize
-            window.addEventListener('resize', function() {
-                const newVisibleCards = Math.floor(document.querySelector('.slider-container').offsetWidth / cardWidth);
-                const newMaxSlideIndex = totalCards - newVisibleCards;
-                
-                if (currentPosition > newMaxSlideIndex) {
-                    goToSlide(newMaxSlideIndex);
-                }
-            });
-        });
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
