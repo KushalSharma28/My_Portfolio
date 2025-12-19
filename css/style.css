@@ -421,6 +421,14 @@ section {
     text-decoration: underline;
 }
 
+/* --- New Class for Multiple Link Stack --- */
+.cert-links-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto; 
+}
+
 /* --- 11. BACK TO TOP BUTTON --- */
 .back-to-top {
     position: fixed;
