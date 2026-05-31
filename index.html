@@ -283,9 +283,9 @@
             <p style="color: var(--text-secondary);">
                 A cross-platform client-server application for managing software deployment,system configurations, policy enforcement, and centralized dashboards for device monitoring. 
                 <br><br>
-                <span class="highlight">The Challenge:</span> Manual regression for 5+ devices was taking 4 days per release.
+                <span class="highlight">The Challenge:</span> Manual regression testing across a fragmented matrix of physical devices and operating systems took 4 days per release. This bottleneck delayed deployment cycles and failed to replicate complex enterprise environment variables like network latency and concurrent mass check-ins.
                 <br>
-                <span class="highlight">The Solution:</span> Designed an automated suite that simulates device heartbeats and policy updates.
+                <span class="highlight">The Solution:</span> Architected and implemented a Hybrid Automation Framework using Selenium WebDriver with Java and Python, increasing test coverage by 40% and reducing manual testing effort by 60%. Successfully reduced regression testing time from 3 days to 6 hours through parallel execution pipelines in Jenkins. Performed rigorous API testing using Postman and Rest Assured to validate endpoint security and data integrity, identifying critical vulnerabilities before production release. Collaborated closely with developers in an Agile environment to resolve critical bugs in the End Point Management system, ensuring timely delivery of high-quality software.
             </p>
             <div class="project-tech-list">
                 <span class="highlight">Selenium</span>
@@ -305,6 +305,10 @@
                 A web-based support system for managing IT service requests and tracking issue resolution lifecycle.
                 <br><br>
                 <span class="highlight">The Contribution:</span> Performed End-to-End testing using Cypress to validate the ticket lifecycle from creation to closure. ensuring zero critical leakage to production.
+                <br><br>
+                <span class="highlight">The Challenge:</span> Validating complex, multi-role SLA workflows (involving end-users, agents, and managers) across different priority levels was highly error-prone. Manual testing often missed critical edge cases like broken status transitions, delayed breach notifications, or race conditions during simultaneous ticket updates, risking major business-disrupting leakages to production.
+                <br><br>
+                <span class="highlight">The Solution:</span> Designed and executed comprehensive test cases covering functional, integration, regression, smoke, and UAT testing for the IT Desk Ticketing System. Validated end-to-end ticket lifecycle workflows, including ticket creation, assignment, escalation, and closure, ensuring seamless user experiences across omnichannel communication workflows including Email, SMS, and Web Portal interactions. Additionally, tested critical functionalities such as SLA tracking, priority management, and reporting dashboards to ensure optimal performance and reliability of the support system.
             </p>
             <div class="project-tech-list">
                 <span class="highlight">Cypress</span>
